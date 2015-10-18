@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		let Instagram:InstagramManager = InstagramManager.shared()
+		
+		if(Instagram.isSessionValid())
+		{
+			window?.rootViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController()
+		}else{
+			
+			let rootController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("LoginViewController")
+			window?.rootViewController = UINavigationController.init(rootViewController: rootController)
+		}
 		return true
 	}
 
