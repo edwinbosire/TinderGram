@@ -13,18 +13,20 @@
 		962615541BD3F745001ADE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962615521BD3F745001ADE16 /* Main.storyboard */; };
 		962615561BD3F745001ADE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962615551BD3F745001ADE16 /* Assets.xcassets */; };
 		962615591BD3F745001ADE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962615571BD3F745001ADE16 /* LaunchScreen.storyboard */; };
-		962615621BD40004001ADE16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615611BD40004001ADE16 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9626156A1BD40EE5001ADE16 /* InstagramManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 962615691BD40EE5001ADE16 /* InstagramManager.m */; settings = {ASSET_TAGS = (); }; };
-		9626156C1BD416FB001ADE16 /* CardOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626156B1BD416FB001ADE16 /* CardOverlayView.swift */; settings = {ASSET_TAGS = (); }; };
-		9626156E1BD4171B001ADE16 /* CardOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626156D1BD4171B001ADE16 /* CardOverlayView.xib */; settings = {ASSET_TAGS = (); }; };
-		962615701BD43426001ADE16 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626156F1BD43426001ADE16 /* CardView.xib */; settings = {ASSET_TAGS = (); }; };
-		962615721BD44FBF001ADE16 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615711BD44FBF001ADE16 /* CardView.swift */; settings = {ASSET_TAGS = (); }; };
+		962615621BD40004001ADE16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615611BD40004001ADE16 /* LoginViewController.swift */; };
+		9626156A1BD40EE5001ADE16 /* InstagramManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 962615691BD40EE5001ADE16 /* InstagramManager.m */; };
+		9626156C1BD416FB001ADE16 /* CardOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626156B1BD416FB001ADE16 /* CardOverlayView.swift */; };
+		9626156E1BD4171B001ADE16 /* CardOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626156D1BD4171B001ADE16 /* CardOverlayView.xib */; };
+		962615701BD43426001ADE16 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626156F1BD43426001ADE16 /* CardView.xib */; };
+		962615721BD44FBF001ADE16 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615711BD44FBF001ADE16 /* CardView.swift */; };
+		962615761BD5A6FF001ADE16 /* SignInLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615751BD5A6FF001ADE16 /* SignInLandingViewController.swift */; };
+		962615781BD6D3F6001ADE16 /* EBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962615771BD6D3F6001ADE16 /* EBButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03AF68CC97F9E3C44AC6BC88 /* Pods_InstaSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C64AD828E028987834A4135 /* Pods-InstaSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSwipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaSwipe/Pods-InstaSwipe.release.xcconfig"; sourceTree = "<group>"; };
-		7314393556F2FB8ACA2B62AC /* Pods-InstaSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaSwipe/Pods-InstaSwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		1EF4C0426806B6D6DDA739E8 /* Pods-InstaSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaSwipe/Pods-InstaSwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		4FC61D37D68F2DB6BE88544A /* Pods-InstaSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaSwipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaSwipe/Pods-InstaSwipe.release.xcconfig"; sourceTree = "<group>"; };
 		9626154B1BD3F745001ADE16 /* InstaSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9626154E1BD3F745001ADE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		962615501BD3F745001ADE16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,13 +35,15 @@
 		962615581BD3F745001ADE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9626155A1BD3F745001ADE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962615611BD40004001ADE16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		962615641BD401B8001ADE16 /* InstaSwipe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
 		962615681BD40EE5001ADE16 /* InstagramManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramManager.h; sourceTree = "<group>"; };
 		962615691BD40EE5001ADE16 /* InstagramManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramManager.m; sourceTree = "<group>"; };
 		9626156B1BD416FB001ADE16 /* CardOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardOverlayView.swift; sourceTree = "<group>"; };
 		9626156D1BD4171B001ADE16 /* CardOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardOverlayView.xib; sourceTree = "<group>"; };
 		9626156F1BD43426001ADE16 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		962615711BD44FBF001ADE16 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		962615751BD5A6FF001ADE16 /* SignInLandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInLandingViewController.swift; sourceTree = "<group>"; };
+		962615771BD6D3F6001ADE16 /* EBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBButton.swift; sourceTree = "<group>"; };
+		96A469171BE182B9007F7AE7 /* InstaSwipe-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InstaSwipe-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,8 @@
 		5CBDB08DAD3E62A2BB490280 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7314393556F2FB8ACA2B62AC /* Pods-InstaSwipe.debug.xcconfig */,
-				2C64AD828E028987834A4135 /* Pods-InstaSwipe.release.xcconfig */,
+				1EF4C0426806B6D6DDA739E8 /* Pods-InstaSwipe.debug.xcconfig */,
+				4FC61D37D68F2DB6BE88544A /* Pods-InstaSwipe.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -96,11 +100,13 @@
 				9626154E1BD3F745001ADE16 /* AppDelegate.swift */,
 				962615501BD3F745001ADE16 /* ViewController.swift */,
 				962615611BD40004001ADE16 /* LoginViewController.swift */,
+				962615751BD5A6FF001ADE16 /* SignInLandingViewController.swift */,
 				9626156B1BD416FB001ADE16 /* CardOverlayView.swift */,
 				962615711BD44FBF001ADE16 /* CardView.swift */,
+				962615771BD6D3F6001ADE16 /* EBButton.swift */,
 				9626156D1BD4171B001ADE16 /* CardOverlayView.xib */,
 				9626156F1BD43426001ADE16 /* CardView.xib */,
-				962615641BD401B8001ADE16 /* InstaSwipe-Bridging-Header.h */,
+				96A469171BE182B9007F7AE7 /* InstaSwipe-Bridging-Header.h */,
 				962615681BD40EE5001ADE16 /* InstagramManager.h */,
 				962615691BD40EE5001ADE16 /* InstagramManager.m */,
 				9626155A1BD3F745001ADE16 /* Info.plist */,
@@ -243,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				962615621BD40004001ADE16 /* LoginViewController.swift in Sources */,
+				962615761BD5A6FF001ADE16 /* SignInLandingViewController.swift in Sources */,
 				962615511BD3F745001ADE16 /* ViewController.swift in Sources */,
 				9626156A1BD40EE5001ADE16 /* InstagramManager.m in Sources */,
+				962615781BD6D3F6001ADE16 /* EBButton.swift in Sources */,
 				9626154F1BD3F745001ADE16 /* AppDelegate.swift in Sources */,
 				962615721BD44FBF001ADE16 /* CardView.swift in Sources */,
 				9626156C1BD416FB001ADE16 /* CardOverlayView.swift in Sources */,
@@ -309,10 +317,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/InstaSwipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -347,24 +357,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/InstaSwipe-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9626155E1BD3F745001ADE16 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7314393556F2FB8ACA2B62AC /* Pods-InstaSwipe.debug.xcconfig */;
+			baseConfigurationReference = 1EF4C0426806B6D6DDA739E8 /* Pods-InstaSwipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = InstaSwipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edwinb.InstaSwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/InstaSwipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -372,16 +387,19 @@
 		};
 		9626155F1BD3F745001ADE16 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C64AD828E028987834A4135 /* Pods-InstaSwipe.release.xcconfig */;
+			baseConfigurationReference = 4FC61D37D68F2DB6BE88544A /* Pods-InstaSwipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = InstaSwipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edwinb.InstaSwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "InstaSwipe/InstaSwipe-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/InstaSwipe-Bridging-Header.h";
 			};
 			name = Release;
 		};

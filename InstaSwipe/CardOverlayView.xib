@@ -10,15 +10,25 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yesOverlayImage" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-z9-KW8">
-                    <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yesImageOverLay" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-z9-KW8">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="301"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3v-wd-BIe">
+                    <rect key="frame" x="0.0" y="300" width="300" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4a5-Ig-MLn"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="o3v-wd-BIe" secondAttribute="trailing" id="CBG-wU-lJN"/>
+                <constraint firstAttribute="bottom" secondItem="o3v-wd-BIe" secondAttribute="bottom" id="CJj-7I-isq"/>
                 <constraint firstItem="TKW-z9-KW8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gef-UM-cI4"/>
-                <constraint firstAttribute="bottom" secondItem="TKW-z9-KW8" secondAttribute="bottom" id="J7h-rK-DLy"/>
                 <constraint firstItem="TKW-z9-KW8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kwl-8Y-YPn"/>
+                <constraint firstItem="o3v-wd-BIe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YXS-ye-8bJ"/>
+                <constraint firstItem="o3v-wd-BIe" firstAttribute="top" secondItem="TKW-z9-KW8" secondAttribute="bottom" constant="-1" id="eUV-2j-WaI"/>
                 <constraint firstAttribute="trailing" secondItem="TKW-z9-KW8" secondAttribute="trailing" id="pLq-Td-lmp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -28,6 +38,6 @@
         </view>
     </objects>
     <resources>
-        <image name="yesOverlayImage" width="284" height="320"/>
+        <image name="yesImageOverLay" width="300" height="300"/>
     </resources>
 </document>

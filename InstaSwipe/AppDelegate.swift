@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		
+		UIApplication.sharedApplication().statusBarStyle = .LightContent;
+		self.window?.backgroundColor = UIColor.whiteColor()
+		
 		let Instagram:InstagramManager = InstagramManager.shared()
 		
 		if(Instagram.isSessionValid())

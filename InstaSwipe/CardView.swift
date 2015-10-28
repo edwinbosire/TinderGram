@@ -52,7 +52,9 @@ class CardView: UIView {
 	
  override func awakeFromNib() {
 	super.awakeFromNib()
-	
+	self.layer.cornerRadius = 10.0
+	self.layer.masksToBounds = true;
+
 	}
 	
 }

@@ -9,8 +9,8 @@
 import UIKit
 import Koloda
 
-private let overlayRightImageName = "yesOverlay"
-private let overlayLeftImageName = "no-overlay"
+private let overlayRightImageName = "yesImageOverLay"
+private let overlayLeftImageName = "noImageOverLay"
 
 class CardOverlayView: OverlayView {
 
@@ -25,7 +25,8 @@ class CardOverlayView: OverlayView {
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()
-		
+		self.layer.cornerRadius = 10.0
+		self.layer.masksToBounds = true;
 	}
 	
 	override var overlayState:OverlayMode  {
@@ -42,5 +43,4 @@ class CardOverlayView: OverlayView {
 		}
 	}
 	
-
 }

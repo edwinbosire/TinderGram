@@ -11,6 +11,8 @@ import UIKit
 class LoginViewController: UIViewController, UIWebViewDelegate {
 
 	@IBOutlet weak var webView: UIWebView!
+	@IBOutlet weak var loadingIndicatorView: UIView!
+	
 	let Instagram:InstagramManager = InstagramManager.shared()
 	
     override func viewDidLoad() {
@@ -24,11 +26,42 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
 
     }
 
+	@IBAction func reloadWebView(sender: EBButton) {
+	}
+	
+	
+	@IBAction func dismissView(sender: EBButton) {
+		
+		self.dismissViewControllerAnimated(true) { () -> Void in
+			
+		}
+	}
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	func webViewDidStartLoad(webView: UIWebView) {
+
+		self.loadingIndicatorView.hidden = false
+		UIView.animateWithDuration(0.3, animations: { [unowned self] in
+				self.loadingIndicatorView.alpha = 0.25
+			}, completion: { (finished) -> Void in
+				
+		})
+		
+	}
+	
+	func webViewDidFinishLoad(webView: UIWebView) {
+		
+		UIView.animateWithDuration(0.3, animations: { [unowned self] in
+			self.loadingIndicatorView.alpha = 0.0
+			}) { (finished) -> Void in
+				self.loadingIndicatorView.hidden = true
+		}
+	}
+	
 	func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
 		
 		if (Instagram.extractTokenFromURL(request.URL))

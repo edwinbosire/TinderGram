@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "InstagramKit/InstagramMedia.h" 
 
 @class InstagramKit;
 typedef void(^FeedCompletionBlock)(NSArray *items, NSError *error);

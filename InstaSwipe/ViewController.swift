@@ -8,12 +8,12 @@
 
 import UIKit
 import Koloda
-import pop
-import InstagramKit
 
 class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate {
 	
 	@IBOutlet weak var kolodaView: KolodaView!
+	@IBOutlet weak var activityLoader: UIStackView!
+	
 	var cardsCollection: [CardView] = []
 	
 	//MARK: Lifecycle
@@ -28,7 +28,12 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 		loadMedia()
 	}
 	
-	func loadMedia(){
+	func loadMedia() {
+		
+		if (!cardsCollection.isEmpty) {
+			self.kolodaView.reloadData()
+			return
+		}
 		let manager = InstagramManager.shared()
 
 		manager.retrieveFeeds { (items, error) -> Void in
@@ -44,6 +49,7 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 					self.cardsCollection += [view]
 				}
 				
+				self.activityLoader.alpha = 0
 				self.kolodaView.reloadData()
 			}
 			
@@ -63,9 +69,35 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	}
 	
 	@IBAction func undoButtonTapped() {
-		loadMedia()
+//		loadMedia()
 	}
 	
+	@IBAction func presentActionSheet() {
+		
+		let alertController = UIAlertController(title: "Settings", message: "How can we help?", preferredStyle: .ActionSheet)
+		let logout = UIAlertAction(title: "Logout", style: .Default) { (action:UIAlertAction) -> Void in
+			
+		}
+		
+		let moreInfo = UIAlertAction(title: "Info", style: .Default) { (action:UIAlertAction) -> Void in
+			
+		}
+		
+		let refresh = UIAlertAction(title: "Refresh", style: .Default) { (action:UIAlertAction) -> Void in
+			
+		}
+		
+		let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action:UIAlertAction) -> Void in
+			
+		}
+		alertController.addAction(refresh)
+		alertController.addAction(logout)
+		alertController.addAction(moreInfo)
+		alertController.addAction(cancel)
+		self.presentViewController(alertController, animated: true) { () -> Void in
+			
+		}
+	}
 	//MARK: KolodaViewDataSource
 	func kolodaNumberOfCards(koloda: KolodaView) -> UInt {
 		return UInt(cardsCollection.count)
@@ -91,8 +123,14 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	}
 	
 	func kolodaDidRunOutOfCards(koloda: KolodaView) {
-		//Example: reloading
-		kolodaView.resetCurrentCardNumber()
+		
+		UIView.animateWithDuration(0.3, animations: { [unowned self] in
+			self.activityLoader.alpha = 1
+			}) { (finished) -> Void in
+				self.kolodaView.resetCurrentCardNumber()
+		}
+		
+		
 	}
 	
 	func kolodaDidSelectCardAtIndex(koloda: KolodaView, index: UInt) {
@@ -115,6 +153,9 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 		return nil
 	}
 	
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .LightContent
+	}
 }
 
 

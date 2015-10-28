@@ -7,7 +7,7 @@
 //
 
 #import "InstagramManager.h"
-#import "InstagramKit.h"
+#import "Instagram/InstagramKit.h"
 
 #define kFetchItemsCount 15
 
