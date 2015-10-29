@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -22,12 +21,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbackground" translatesAutoresizingMaskIntoConstraints="NO" id="7Ed-Rv-Jpg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZX-Nl-3vZ" customClass="EBButton" customModule="InstaSwipe" customModuleProvider="target">
-                                <rect key="frame" x="167" y="461" width="266" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZX-Nl-3vZ" customClass="EBButton" customModule="InstaSwipe" customModuleProvider="target">
+                                <rect key="frame" x="165" y="461" width="270" height="51"/>
                                 <color key="backgroundColor" red="0.31764705879999999" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="Tc3-0U-ouP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="iqV-LM-PLR"/>
+                                    <constraint firstAttribute="width" constant="270" id="ro7-FP-KUt"/>
                                     <constraint firstAttribute="height" constant="51" id="suH-zz-cbr"/>
+                                    <constraint firstAttribute="height" constant="51" id="ynx-sk-obL"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -55,7 +57,7 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="Tc3-0U-ouP"/>
+                                        <exclude reference="Tc3-0U-ouP"/>
                                         <include reference="suH-zz-cbr"/>
                                     </mask>
                                 </variation>
@@ -67,11 +69,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Ed-Rv-Jpg" firstAttribute="leading" secondItem="Tze-KT-yZW" secondAttribute="leading" id="3M5-rO-r4b"/>
+                            <constraint firstItem="Izd-eI-6Z1" firstAttribute="top" secondItem="BZX-Nl-3vZ" secondAttribute="bottom" constant="88" id="9ZQ-ml-uxi"/>
                             <constraint firstItem="Izd-eI-6Z1" firstAttribute="top" secondItem="7Ed-Rv-Jpg" secondAttribute="bottom" id="O1v-Jy-8Nc"/>
                             <constraint firstItem="BZX-Nl-3vZ" firstAttribute="centerX" secondItem="Tze-KT-yZW" secondAttribute="centerX" id="Srr-pa-3dc"/>
                             <constraint firstItem="Izd-eI-6Z1" firstAttribute="top" secondItem="BZX-Nl-3vZ" secondAttribute="bottom" constant="152" id="aUp-DR-jAL"/>
                             <constraint firstAttribute="trailing" secondItem="7Ed-Rv-Jpg" secondAttribute="trailing" id="lGZ-sE-soQ"/>
                             <constraint firstItem="7Ed-Rv-Jpg" firstAttribute="top" secondItem="Tze-KT-yZW" secondAttribute="top" id="tSC-CN-2g4"/>
+                            <constraint firstItem="BZX-Nl-3vZ" firstAttribute="centerX" secondItem="Tze-KT-yZW" secondAttribute="centerX" id="ufY-Bk-hQk"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -82,6 +86,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Srr-pa-3dc"/>
+                                <exclude reference="9ZQ-ml-uxi"/>
                                 <include reference="aUp-DR-jAL"/>
                             </mask>
                         </variation>
@@ -393,7 +398,7 @@
                             </view>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="e6P-lz-ntH" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="18" y="64" width="284" height="320"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="e6P-lz-ntH" secondAttribute="height" multiplier="3:4" id="5Ru-GY-jee"/>
                                 </constraints>
@@ -430,9 +435,6 @@
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="lpB-Cg-EaI">
                                         <rect key="frame" x="71" y="20" width="20" height="20"/>
                                         <color key="color" white="0.97104703000000003" alpha="1" colorSpace="calibratedWhite"/>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="48" y="0.0" width="20" height="20"/>
-                                        </variation>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Loading cards..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2x-3W-TSz">
                                         <rect key="frame" x="20" y="55" width="122" height="21"/>

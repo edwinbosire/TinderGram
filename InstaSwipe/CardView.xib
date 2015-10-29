@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -24,8 +24,8 @@
                     </variation>
                     <variation key="widthClass=compact">
                         <mask key="constraints">
-                            <include reference="7W3-62-1Yq"/>
-                            <include reference="mc5-Tq-NXv"/>
+                            <exclude reference="7W3-62-1Yq"/>
+                            <exclude reference="mc5-Tq-NXv"/>
                         </mask>
                     </variation>
                 </imageView>
@@ -228,12 +228,12 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="DXO-9h-qda"/>
-                            <exclude reference="2Fx-o0-Jcw"/>
-                            <exclude reference="4Wg-zS-RyH"/>
-                            <exclude reference="ihz-JE-MnO"/>
                             <exclude reference="KqB-eD-eQE"/>
                             <exclude reference="WGV-tK-e1r"/>
                             <exclude reference="ut2-S0-Hht"/>
+                            <exclude reference="2Fx-o0-Jcw"/>
+                            <exclude reference="4Wg-zS-RyH"/>
+                            <exclude reference="ihz-JE-MnO"/>
                             <exclude reference="OUb-Vx-H9h"/>
                             <exclude reference="aYl-BC-gAO"/>
                             <exclude reference="hqn-br-iqM"/>
@@ -249,12 +249,12 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="DXO-9h-qda"/>
-                            <include reference="2Fx-o0-Jcw"/>
-                            <include reference="4Wg-zS-RyH"/>
-                            <include reference="ihz-JE-MnO"/>
                             <include reference="KqB-eD-eQE"/>
                             <include reference="WGV-tK-e1r"/>
                             <include reference="ut2-S0-Hht"/>
+                            <include reference="2Fx-o0-Jcw"/>
+                            <include reference="4Wg-zS-RyH"/>
+                            <include reference="ihz-JE-MnO"/>
                             <include reference="OUb-Vx-H9h"/>
                             <include reference="aYl-BC-gAO"/>
                             <include reference="hqn-br-iqM"/>
@@ -264,7 +264,7 @@
                     </variation>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="1Cn-wr-SFQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1sj-lS-Eif"/>
                 <constraint firstAttribute="trailing" secondItem="1Cn-wr-SFQ" secondAttribute="trailing" id="1yg-24-SrC"/>

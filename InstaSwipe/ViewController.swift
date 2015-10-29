@@ -8,6 +8,8 @@
 
 import UIKit
 import Koloda
+import pop
+import InstagramKit
 
 class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate {
 	
@@ -115,11 +117,9 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	//MARK: KolodaViewDelegate
 	
 	func kolodaDidSwipedCardAtIndex(koloda: KolodaView, index: UInt, direction: SwipeResultDirection) {
-		//Example: loading more cards
-//		if index >= 3 {
-//			numberOfCards = 6
-//			kolodaView.reloadData()
-//		}
+		/**
+		Insert instagram like/pass logic here
+*/
 	}
 	
 	func kolodaDidRunOutOfCards(koloda: KolodaView) {
@@ -128,6 +128,7 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 			self.activityLoader.alpha = 1
 			}) { (finished) -> Void in
 				self.kolodaView.resetCurrentCardNumber()
+				self.activityLoader.alpha = 0
 		}
 		
 		

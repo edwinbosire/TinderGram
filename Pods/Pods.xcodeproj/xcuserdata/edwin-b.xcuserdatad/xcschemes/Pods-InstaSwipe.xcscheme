@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '59BFDEEC75E682C80F81F2D2'
+               BlueprintIdentifier = '90D577BB3A90B9FEB2CAAA82'
                BlueprintName = 'Pods-InstaSwipe'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_InstaSwipe.framework'>
