@@ -37,7 +37,7 @@
 
 - (NSURL *)authenticationURL
 {
-	return  [[InstagramEngine sharedEngine] authorizarionURLForScope:InstagramKitLoginScopeBasic];
+	return  [[InstagramEngine sharedEngine] authorizarionURLForScope:(InstagramKitLoginScopeBasic | InstagramKitLoginScopeLikes)];
 }
 
 - (BOOL)extractTokenFromURL:(NSURL *)url
@@ -75,5 +75,15 @@
 										   NSLog(@"Fetching feed items failed");
 									   }];
 
+}
+
+- (void)likeMedia:(NSString *)mediaId completion:(LikeCompletionBlock)block
+{
+	[[InstagramEngine sharedEngine] likeMedia:mediaId
+								  withSuccess:^(NSDictionary *serverResponse) {
+									  block(YES);
+								  } failure:^(NSError *error, NSInteger serverStatusCode) {
+									  block(NO);
+								  }];
 }
 @end

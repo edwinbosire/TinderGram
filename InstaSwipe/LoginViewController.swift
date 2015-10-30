@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class LoginViewController: UIViewController, UIWebViewDelegate {
 
 	@IBOutlet weak var webView: UIWebView!
-	@IBOutlet weak var loadingIndicatorView: UIView!
+	@IBOutlet weak var loadingIndicatorView: NVActivityIndicatorView!
 	
 	let Instagram:InstagramManager = InstagramManager.shared()
 	
@@ -46,7 +47,7 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
 
 		self.loadingIndicatorView.hidden = false
 		UIView.animateWithDuration(0.3, animations: { [unowned self] in
-				self.loadingIndicatorView.alpha = 0.25
+				self.loadingIndicatorView.alpha = 1.0
 			}, completion: { (finished) -> Void in
 				
 		})
@@ -66,6 +67,7 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
 		
 		if (Instagram.extractTokenFromURL(request.URL))
 		{
+			NSLog("URL: %@", request.URL!);
 				signup()
 				NSNotificationCenter.defaultCenter().postNotificationName("InstagramUserAuthenticatedNotification", object: nil)
 		}

@@ -20,13 +20,10 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	
 	//MARK: Lifecycle
 	override func viewDidLoad() {
-		super.viewDidLoad()
 		
+		super.viewDidLoad()
 		kolodaView.dataSource = self
 		kolodaView.delegate = self
-		
-		self.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-		
 		loadMedia()
 	}
 	
@@ -106,7 +103,6 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	}
 	
 	func kolodaViewForCardAtIndex(koloda: KolodaView, index: UInt) -> UIView {
-//		let view = NSBundle.mainBundle().loadNibNamed("CardView", owner: self, options: nil)[0] as! UIView
 		let view = cardsCollection[Int(index)]
 		return view
 	}
@@ -117,9 +113,22 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
 	//MARK: KolodaViewDelegate
 	
 	func kolodaDidSwipedCardAtIndex(koloda: KolodaView, index: UInt, direction: SwipeResultDirection) {
-		/**
-		Insert instagram like/pass logic here
-*/
+		
+		if (direction == .Left){
+			
+			let manager = InstagramManager.shared()
+			
+			let view: CardView = cardsCollection[Int(index)]
+			
+			let mediaId = view.mediaID
+			manager.likeMedia(mediaId, completion: { (success: Bool) -> Void in
+				
+			})
+			NSLog("Like photo")
+			
+		}else if (direction == .Right){
+			NSLog("Unlike/Pass photo")
+		}
 	}
 	
 	func kolodaDidRunOutOfCards(koloda: KolodaView) {

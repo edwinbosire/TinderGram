@@ -17,7 +17,7 @@ class CardView: UIView {
 	@IBOutlet weak var comment: UILabel!
 	@IBOutlet weak var commentCount: UILabel!
 	@IBOutlet weak var likesCount: UILabel!
-	
+	var mediaID : String = "not-set"
 	
 	var media: InstagramMedia {
 		
@@ -29,7 +29,7 @@ class CardView: UIView {
 			let url:NSURL = newMedia.standardResolutionImageURL
 			let profilePicURL = newMedia.user.profilePictureURL
 			let placeholder = UIImage(named: "doge")
-			
+			mediaID = newMedia.Id
 //			if(_media.isVideo){
 //				self.movieIcon.hidden = NO;
 //			}

@@ -10,7 +10,7 @@
 
 @class InstagramKit;
 typedef void(^FeedCompletionBlock)(NSArray *items, NSError *error);
-
+typedef void(^LikeCompletionBlock) (BOOL success);
 @interface InstagramManager : NSObject
 
 @property (nonatomic, strong) NSMutableArray *mediaArray;
@@ -24,5 +24,9 @@ typedef void(^FeedCompletionBlock)(NSArray *items, NSError *error);
 #pragma mark - Feed Retrieval
 
 - (void)retrieveFeeds:(FeedCompletionBlock)block;
+
+#pragma mark - Like/Pass Media
+
+- (void)likeMedia:(NSString *)mediaId completion:(LikeCompletionBlock)block;
 
 @end

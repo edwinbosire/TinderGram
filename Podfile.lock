@@ -27,16 +27,19 @@ PODS:
     - AFNetworking (~> 2.0)
   - Koloda (2.0.3):
     - pop (~> 1.0)
+  - NVActivityIndicatorView (2.1)
   - pop (1.0.8)
 
 DEPENDENCIES:
   - InstagramKit (~> 3.0)
   - Koloda (~> 2.0.3)
+  - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   InstagramKit: 2dc81dd8a9b534bbf918fbf8c4bc11eef11040a3
   Koloda: ae8e90ca29c709572eb948a3ce0ca44db62f8344
+  NVActivityIndicatorView: 84aa48f7ec1efbfd0645e9f469097d94c6f65417
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
 
 COCOAPODS: 0.39.0

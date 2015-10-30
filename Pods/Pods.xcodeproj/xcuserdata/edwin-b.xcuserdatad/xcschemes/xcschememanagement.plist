@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-InstaSwipe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>43A2FC525883F546871A50D7B7D8D78E</key>
+		<key>3386A3FD10694BB8558A72D49D1073A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46A5DE0A4280FA63F2400C0644C38FF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

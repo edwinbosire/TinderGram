@@ -207,10 +207,10 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8j-S0-1sO" userLabel="Loading View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8j-S0-1sO" userLabel="Loading View" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fMW-D7-nD0">
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fMW-D7-nD0">
                                         <rect key="frame" x="94" y="337" width="211" height="88"/>
                                         <subviews>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="2As-KQ-AMD">
@@ -266,7 +266,7 @@
                                         </variation>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.097124049300000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="fMW-D7-nD0" firstAttribute="centerY" secondItem="E8j-S0-1sO" secondAttribute="centerY" id="QxI-CW-nun"/>
                                     <constraint firstItem="fMW-D7-nD0" firstAttribute="centerX" secondItem="E8j-S0-1sO" secondAttribute="centerX" id="crA-hI-Wer"/>

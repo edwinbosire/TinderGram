@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-InstaSwipe/AFNetworking.framework"
   install_framework "Pods-InstaSwipe/InstagramKit.framework"
   install_framework "Pods-InstaSwipe/Koloda.framework"
+  install_framework "Pods-InstaSwipe/NVActivityIndicatorView.framework"
   install_framework "Pods-InstaSwipe/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-InstaSwipe/AFNetworking.framework"
   install_framework "Pods-InstaSwipe/InstagramKit.framework"
   install_framework "Pods-InstaSwipe/Koloda.framework"
+  install_framework "Pods-InstaSwipe/NVActivityIndicatorView.framework"
   install_framework "Pods-InstaSwipe/pop.framework"
 fi
