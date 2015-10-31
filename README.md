@@ -3,7 +3,7 @@ Tinder + Instagram, need I say more? Swipe left/right to like
 
 ##Notes:
 
-Its still in developmentment. I will upload a gif soon.
+Its still in developmentment. It fully work.
 
 ![cards](/tinderGramDemo.gif "Cards View")
 
