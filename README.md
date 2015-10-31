@@ -5,7 +5,7 @@ Tinder + Instagram, need I say more? Swipe left/right to like
 
 Its still in developmentment. I will upload a gif soon.
 
-![cards](http://i.imgur.com/IYxEcER.png "Cards View")
+![cards](/tinderGramDemo.gif "Cards View")
 
 ##Installation
 
