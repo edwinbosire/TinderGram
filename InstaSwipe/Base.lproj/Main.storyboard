@@ -207,115 +207,23 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8j-S0-1sO" userLabel="Loading View" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fMW-D7-nD0">
-                                        <rect key="frame" x="94" y="337" width="211" height="88"/>
-                                        <subviews>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="2As-KQ-AMD">
-                                                <rect key="frame" x="96" y="20" width="20" height="20"/>
-                                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </activityIndicatorView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBA-wk-YKD">
-                                                <rect key="frame" x="20" y="47" width="171" height="21"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Waiting on ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="Instagram">
-                                                        <attributes>
-                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="..">
-                                                        <attributes>
-                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="TXV-s4-bXj"/>
-                                            <constraint firstAttribute="height" constant="43" id="oOJ-JX-mk8"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="TXV-s4-bXj"/>
-                                                <exclude reference="oOJ-JX-mk8"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" alignment="center">
-                                            <mask key="constraints">
-                                                <include reference="TXV-s4-bXj"/>
-                                                <include reference="oOJ-JX-mk8"/>
-                                            </mask>
-                                        </variation>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.31764705879999999" green="0.49803921569999998" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="fMW-D7-nD0" firstAttribute="centerY" secondItem="E8j-S0-1sO" secondAttribute="centerY" id="QxI-CW-nun"/>
-                                    <constraint firstItem="fMW-D7-nD0" firstAttribute="centerX" secondItem="E8j-S0-1sO" secondAttribute="centerX" id="crA-hI-Wer"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="fMW-D7-nD0"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="QxI-CW-nun"/>
-                                        <exclude reference="crA-hI-Wer"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="fMW-D7-nD0"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="QxI-CW-nun"/>
-                                        <include reference="crA-hI-Wer"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.17254902420000001" green="0.24313725529999999" blue="0.31372550129999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jR7-zC-fkd" firstAttribute="top" secondItem="pwc-0Y-RdE" secondAttribute="bottom" id="4Vr-dc-eoz"/>
-                            <constraint firstItem="E8j-S0-1sO" firstAttribute="leading" secondItem="aWh-yw-V6C" secondAttribute="leading" id="ADx-MN-Zcw"/>
                             <constraint firstAttribute="trailing" secondItem="pwc-0Y-RdE" secondAttribute="trailing" id="DZ5-d0-GHh"/>
-                            <constraint firstAttribute="trailing" secondItem="E8j-S0-1sO" secondAttribute="trailing" id="VZZ-e0-EJc"/>
-                            <constraint firstItem="yVU-1u-7zo" firstAttribute="top" secondItem="E8j-S0-1sO" secondAttribute="bottom" id="WCl-st-qhz"/>
                             <constraint firstItem="jR7-zC-fkd" firstAttribute="top" secondItem="aWh-yw-V6C" secondAttribute="top" id="adv-Mm-rAZ"/>
                             <constraint firstItem="jR7-zC-fkd" firstAttribute="leading" secondItem="aWh-yw-V6C" secondAttribute="leading" id="kK9-UB-CLf"/>
                             <constraint firstItem="yVU-1u-7zo" firstAttribute="top" secondItem="jR7-zC-fkd" secondAttribute="bottom" id="mAq-jt-uJc"/>
                             <constraint firstItem="pwc-0Y-RdE" firstAttribute="top" secondItem="Ez4-il-Bp3" secondAttribute="bottom" id="tC3-Vl-Cum"/>
-                            <constraint firstItem="E8j-S0-1sO" firstAttribute="top" secondItem="pwc-0Y-RdE" secondAttribute="bottom" id="tKJ-9L-eyf"/>
                             <constraint firstItem="pwc-0Y-RdE" firstAttribute="leading" secondItem="aWh-yw-V6C" secondAttribute="leading" id="uYG-9t-eyP"/>
                             <constraint firstAttribute="trailing" secondItem="jR7-zC-fkd" secondAttribute="trailing" id="zz2-El-rgA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pwc-0Y-RdE"/>
-                                <exclude reference="E8j-S0-1sO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WCl-st-qhz"/>
-                                <exclude reference="ADx-MN-Zcw"/>
-                                <exclude reference="VZZ-e0-EJc"/>
-                                <exclude reference="tKJ-9L-eyf"/>
                                 <exclude reference="DZ5-d0-GHh"/>
                                 <exclude reference="tC3-Vl-Cum"/>
                                 <exclude reference="uYG-9t-eyP"/>
@@ -325,13 +233,8 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pwc-0Y-RdE"/>
-                                <include reference="E8j-S0-1sO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="WCl-st-qhz"/>
-                                <include reference="ADx-MN-Zcw"/>
-                                <include reference="VZZ-e0-EJc"/>
-                                <include reference="tKJ-9L-eyf"/>
                                 <include reference="DZ5-d0-GHh"/>
                                 <include reference="tC3-Vl-Cum"/>
                                 <include reference="uYG-9t-eyP"/>
@@ -341,7 +244,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="loadingIndicatorView" destination="E8j-S0-1sO" id="9hh-Mj-7Ux"/>
                         <outlet property="webView" destination="jR7-zC-fkd" id="CBd-oo-5QZ"/>
                     </connections>
                 </viewController>

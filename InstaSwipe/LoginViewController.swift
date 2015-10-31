@@ -12,13 +12,17 @@ import NVActivityIndicatorView
 class LoginViewController: UIViewController, UIWebViewDelegate {
 
 	@IBOutlet weak var webView: UIWebView!
-	@IBOutlet weak var loadingIndicatorView: NVActivityIndicatorView!
+	 var loadingIndicatorView: NVActivityIndicatorView!
 	
 	let Instagram:InstagramManager = InstagramManager.shared()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
+		loadingIndicatorView = NVActivityIndicatorView(frame: self.view.frame, type: .BallClipRotate, color: UIColor.blackColor(), size: CGSize(width: 44, height: 44));
+		loadingIndicatorView.hidden = true
+		self.view.addSubview(loadingIndicatorView)
+		
        webView.scrollView.bounces = false
 		
 		let authenticationURL:NSURL = Instagram.authenticationURL()
@@ -83,5 +87,9 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
 		if let win = sharedApp.window! {
 			win.rootViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController();
 		}
+	}
+	
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .Default
 	}
 }

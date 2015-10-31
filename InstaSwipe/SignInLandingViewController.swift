@@ -25,5 +25,7 @@ class SignInLandingViewController: UIViewController {
 		self.navigationController?.navigationBarHidden = false;
 	}
 	
-
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .Default
+	}
 }
